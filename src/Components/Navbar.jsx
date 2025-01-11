@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import { FaCloudDownloadAlt } from "react-icons/fa";
+import { FaCloudDownloadAlt, FaTimes } from "react-icons/fa";
 import "../App.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white  backdrop-blur-md shadow-md w-full z-10 sticky top-0">
+    <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white backdrop-blur-md shadow-md w-full z-10 sticky top-0">
       <div className="container mx-auto px-4 flex items-center justify-between py-3">
         {/* Logo Section */}
         <div className="relative group">
           <div className="text-xl font-bold border-4 border-gray-400 rounded-full">
-            <img src="../../src/assets/aman.png" className="w-10 h-10 rounded-full" alt="" />
+            <img
+              src="https://i.ibb.co.com/zSWvzz1/aman.png"
+              className="w-10 h-10 rounded-full"
+              alt=""
+            />
           </div>
           <span className="absolute left-0 top-full mt-1 text-sm font-medium bg-purple-500 rounded-md px-2 py-1 text-center hidden group-hover:block">
             Md Amanullah
@@ -54,7 +58,7 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="btn btn-ghost text-xl"
           >
-            ☰
+            {isMenuOpen ? <FaTimes /> : "☰"}
           </button>
         </div>
       </div>
@@ -62,7 +66,7 @@ const Navbar = () => {
       {/* Mobile Drawer */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <ul className="menu p-4 w-full bg-base-200 text-lg">
+          <ul className="menu p-4 w-full bg-gray-400 text-lg">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -77,6 +81,15 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a
+                href="/aman-cv.pdf" // Replace with the actual resume path
+                download="Resume-of-Aman.pdf"
+                className="btn bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white flex items-center gap-2 font-semibold px-4 py-2 rounded-lg mt-4"
+              >
+                <FaCloudDownloadAlt /> Download Resume
+              </a>
             </li>
           </ul>
         </div>

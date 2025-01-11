@@ -15,7 +15,10 @@ import "../App.css";
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-12">
+    <section
+      id="home"
+      className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-12"
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
@@ -79,7 +82,7 @@ const Hero = () => {
         <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
           <Tilt className="tilt-card shadow-xl rounded-full overflow-hidden w-64 h-64 md:w-72 md:h-72">
             <img
-              src="../../src/assets/aman.png"
+              src="https://i.ibb.co.com/zSWvzz1/aman.png"
               alt="About Me"
               className="w-full h-full object-cover"
             />

@@ -17,11 +17,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">About Us</h3>
+            <h3 className="text-xl font-semibold mb-4">About Me</h3>
             <p className="text-sm">
-              We are a forward-thinking company committed to delivering quality
-              service and customer satisfaction. Our team works tirelessly to
-              create exceptional experiences for you.
+              I am well sincere, managed, highly skilled, punctual and trusted person. I've experience too do work with collaboration and I am totally able to meet the needs in the section.
             </p>
           </div>
 
@@ -124,7 +122,7 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
-          <p>© 2025 Your Company. All Rights Reserved.</p>
+          <p>© 2025 - Md Amanullah. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -108,7 +108,7 @@ const Contact = () => {
               whileHover={{ scale: 1.1 }}
             >
               <FaPhone className="text-2xl" />
-              +88016258412
+              +8801625842642
             </motion.a>
             <motion.a
               href="https://wa.me/+8801625842642"
