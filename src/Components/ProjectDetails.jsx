@@ -34,7 +34,7 @@ const ProjectDetails = () => {
 
   return (
     <motion.div
-      className="w-11/12 lg:w-9/12 my-20 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10 rounded-lg shadow-2xl"
+      className="w-11/12 lg:w-9/12 my-20 mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 md:p-10 rounded-lg shadow-2xl"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}

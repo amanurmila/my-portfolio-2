@@ -7,7 +7,12 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
+import { RiFirebaseLine, RiNextjsLine } from "react-icons/ri";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const Skills = () => {
@@ -18,11 +23,13 @@ const Skills = () => {
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
     { name: "React JS", icon: <FaReact className="text-blue-400" /> },
+    { name: "Next JS", icon: <RiNextjsLine className="text-black" /> },
   ];
 
   const backendSkills = [
     { name: "Node JS", icon: <FaNodeJs className="text-green-600" /> },
     { name: "Express JS", icon: <SiExpress className="text-gray-600" /> },
+    { name: "Firebase", icon: <RiFirebaseLine className="text-yellow-600" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
   ];
 

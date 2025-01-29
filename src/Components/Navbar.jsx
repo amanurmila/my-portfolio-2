@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Download Resume Button */}
         <div className="hidden md:block">
           <a
-            href="/aman-cv.pdf" // Replace with the actual resume path
+            href="/aman-resume.pdf" // Replace with the actual resume path
             download="Resume-of-Aman.pdf"
             className="btn bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white flex items-center gap-2 font-semibold px-4 py-2 rounded-lg"
           >
@@ -84,7 +84,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/aman-cv.pdf" // Replace with the actual resume path
+                href="/aman-resume.pdf"
                 download="Resume-of-Aman.pdf"
                 className="btn bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white flex items-center gap-2 font-semibold px-4 py-2 rounded-lg mt-4"
               >

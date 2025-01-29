@@ -10,8 +10,9 @@ import {
   FaStreetView,
   FaEye,
 } from "react-icons/fa";
-import Tilt from "react-parallax-tilt"; // Install with `npm install react-parallax-tilt`
+import Tilt from "react-parallax-tilt";
 import "../App.css";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -22,6 +23,17 @@ const Hero = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl text-center md:text-left my-2">
+            <Typewriter
+              words={["Md Amanullah"]}
+              loop={0} // Infinite loop
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+          </h2>
           <h3 className="text-3xl text-center md:text-left animate-fade-in my-2">
             Frontend Web Developer
           </h3>
@@ -73,7 +85,7 @@ const Hero = () => {
               className="hover:text-black text-white flex justify-center items-center gap-1 btn btn-sm bg-gradient-to-tr text-sm from-indigo-500 via-purple-500 to-pink-500 from"
             >
               <FaEye />
-              Resume
+              CV
             </a>
           </div>
         </div>
